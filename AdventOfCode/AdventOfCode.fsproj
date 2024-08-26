@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Day01\DayOne.fs" />
+        <EmbeddedResource Include="Day01\input.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <Compile Include="Day02\DayTwo.fs" />
+        <EmbeddedResource Include="Day02\input.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <Compile Include="Day03\DayThree.fs" />
+        <EmbeddedResource Include="Day03\input.txt">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Day04\input.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </EmbeddedResource>
+        <Compile Include="Day04\DayFour.fs" />
+        <Compile Include="Workflow.fs" />
+    </ItemGroup>
+
+</Project>
